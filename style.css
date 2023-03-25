@@ -129,7 +129,7 @@ body{
 
 .header>.shopping-cart{
     position: absolute;
-    top: 100%;
+    top: 110%;
     padding: 1rem;
     right: -110%;
     border: 1px solid;
@@ -197,6 +197,7 @@ body{
     border-radius: .5rem;
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 
 .btn:hover{
@@ -207,4 +208,36 @@ body{
 .header>.shopping-cart>.btn{
     display: block;
     text-align: center;
+}
+
+.header>.login-from{
+    border: 1px solid;
+    position: absolute;
+    display: block;
+    width: 30rem;
+    top: 110%;
+    padding: 2rem;
+    right: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header>.login-from > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header>.login-from > .box{
+    border: 1px solid;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    width: 100%;
 }
