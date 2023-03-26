@@ -7,6 +7,7 @@
     --box-shadow : 0 .5rem 1.5rem rgba(0,0,0,.1);
     --border : .2rem solid rgba(0,0,0,.1);
     --outline : 0.1rem solid rgba(0,0,0,.1);
+
 }
 
 *{
@@ -56,7 +57,7 @@ section{
     right: 0;
     left: 0;
     display: flex;
-    z-index: 1000;
+    z-index: 99;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
@@ -356,12 +357,12 @@ section{
     background: white;
     border-radius: 0.5rem;
     text-align: center;
-    padding: 0rem 2rem 5rem;
+    padding: 0 2rem 5rem;
     outline: var(--outline);
     outline-offset: -1rem;
     box-shadow: var(--box-shadow);
     transition: 0.2s linear;
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 .categories .categories-slider .box img{
@@ -387,7 +388,7 @@ section{
 
 
 .product .product-slider{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .product .product-slider:first-child{
@@ -398,12 +399,12 @@ section{
     background: white;
     border-radius: 0.5rem;
     text-align: center;
-    padding: 0rem 2rem 5rem;
+    padding: 0 2rem 5rem;
     outline: var(--outline);
     outline-offset: -1rem;
     box-shadow: var(--box-shadow);
     transition: 0.2s linear;
-    margin: 2rem;
+    margin: .5rem;
 }
 
 .product .product-slider .box img{
@@ -592,6 +593,13 @@ section{
 }
 
 
-
+#preloader{
+    background: forestgreen url("image/loader.gif") no-repeat center center;
+    background-size: 10%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 
