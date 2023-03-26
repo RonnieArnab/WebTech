@@ -59,13 +59,16 @@ body{
     margin: 0 1rem;
     color : var(--black) ;
 }
+.header .navbar.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
 
 .header>.navbar>a:hover{
     color: var(--green);
 }
 
 .header>.icons>div{
-    border: 1px solid;
     line-height: 4.5rem;
     border-radius: 0.5rem;
     background: #eee;
@@ -132,7 +135,6 @@ body{
     top: 110%;
     padding: 1rem;
     right: -110%;
-    border: 1px solid;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
     width: 35rem;
@@ -193,11 +195,11 @@ body{
     display: inline-block var(--black);
     padding: .8rem 3rem;
     font-size:1.7rem;
-    border: 1px solid;
     border-radius: .5rem;
     color: var(--black);
     cursor: pointer;
     background: none;
+    border: 3px solid var(--green);
 }
 
 .btn:hover{
@@ -211,7 +213,6 @@ body{
 }
 
 .header>.login-from{
-    border: 1px solid;
     position: absolute;
     display: block;
     width: 40rem;
@@ -236,7 +237,6 @@ body{
 }
 
 .header>.login-from > .box{
-    border: 1px solid;
     margin: 0.7rem 0;
     background: #eee;
     border-radius: 0.5rem;
@@ -256,5 +256,49 @@ body{
 .header>.login-from > p>a{
 
     color: var(--green);
-    text-decoration: none;
+    text-decoration: underline;
 }
+
+
+
+
+/*media query*/
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header .navbar{
+        right: -110%;
+        top: 110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        position: absolute;
+        border-radius: .5rem;
+        background: #ffffff;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header >.navbar >a {
+        font-size: 2rem ;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 25%;
+    }
+}
+
