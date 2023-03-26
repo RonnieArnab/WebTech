@@ -4,9 +4,9 @@
     --green : green ;
     --black : #130f40 ;
     --light-color : #666;
-    --box-shadow : 0 .1rem 1rem rgba(0,0,0.1);
-    --border : 2rem solid rgba(0,0,0.1);
-    --outline : 0.1rem solid rgba(0,0,0.1);
+    --box-shadow : 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border : 2rem solid rgba(0,0,0,.1);
+    --outline : 0.1rem solid rgba(0,0,0,.1);
 }
 
 *{
@@ -34,6 +34,20 @@ body{
 
 section{
     padding: 5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3.5rem;
+}
+
+.heading > span{
+    background: var(--green);
+    color: #ffffffff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
 }
 
 .header{
@@ -270,7 +284,6 @@ section{
     background-position: center ;
     background-size:cover ;
     padding-top: 17rem;
-    padding-bottom: 10rem ;
 }
 
 .home .content{
@@ -291,6 +304,77 @@ section{
 
 .home .content h3 span{
     color: var(--green);
+}
+
+.features >.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1rem;
+}
+
+.features >.box-container .box{
+    padding: 5rem 2rem;
+    background: #ffffff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.features >.box-container .box:hover{
+    box-shadow: 1px 1px 10px 5px var(--green);
+}
+
+.features >.box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.features >.box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.features >.box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+    color: var(--light-color);
+}
+
+
+.product .product-slider{
+     border: 1px solid;
+    padding: 1rem;
+}
+
+.product .product-slider:first-child{
+    margin-bottom:2rem ;
+}
+
+.product .product-slider .box{
+    background: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+}
+
+.product .product-slider .box img{
+    height: 25rem;
+}
+
+.product .product-slider .box h1{
+    font-size: 2.5rem;
+    color: var(--black);
+
+}
+
+.product .product-slider .box:hover{
+    box-shadow: 1px 1px 10px 5px var(--green);
 }
 /*media query*/
 @media (max-width: 991px) {
@@ -334,7 +418,14 @@ section{
 
 @media (max-width: 450px) {
     html{
-        font-size: 35%;
+        font-size: 25%;
+    }
+    .heading{
+        font-size: 2.5rem;
     }
 }
+
+
+
+
 
