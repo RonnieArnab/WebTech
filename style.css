@@ -56,6 +56,7 @@ section{
     right: 0;
     left: 0;
     display: flex;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
@@ -309,7 +310,7 @@ section{
 .features >.box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .features >.box-container .box{
@@ -343,8 +344,43 @@ section{
 }
 
 
+.categories .categories-slider{
+    padding: 1rem;
+}
+
+.categories .categories-slider .box{
+    background: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0rem 2rem 5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+    margin: 2rem;
+}
+
+.categories .categories-slider .box img{
+    height: 20rem;
+}
+
+.categories .categories-slider .box p{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.categories .categories-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+
+}
+
+.categories .categories-slider .box:hover{
+    box-shadow: 1px 1px 10px 5px var(--green);
+}
+
 .product .product-slider{
-     border: 1px solid;
     padding: 1rem;
 }
 
@@ -356,15 +392,31 @@ section{
     background: white;
     border-radius: 0.5rem;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 0rem 2rem 5rem;
     outline: var(--outline);
     outline-offset: -1rem;
     box-shadow: var(--box-shadow);
     transition: 0.2s linear;
+    margin: 2rem;
 }
 
 .product .product-slider .box img{
-    height: 25rem;
+    height: 20rem;
+}
+
+.product .product-slider .box .price{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.product .product-slider .box .stars{
+    padding: 2rem;
+}
+
+.product .product-slider .box .stars i{
+    font-size: 1.7rem;
+    color: orange;
 }
 
 .product .product-slider .box h1{
@@ -376,6 +428,86 @@ section{
 .product .product-slider .box:hover{
     box-shadow: 1px 1px 10px 5px var(--green);
 }
+
+.review .review-slider{
+    padding: 1rem;
+}
+
+.review .review-slider .box{
+    background: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0rem 2rem 5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+    margin: 2rem;
+}
+
+.review .review-slider .box img{
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.review .review-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+
+}
+
+.review .review-slider .box:hover{
+    box-shadow: 1px 1px 10px 5px var(--green);
+}
+
+.review .review-slider .box .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
+
+.blogs >.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.blogs >.box-container .box{
+    padding: 5rem 2rem;
+    background: #ffffff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.blogs >.box-container .box:hover{
+    box-shadow: 1px 1px 10px 5px var(--green);
+}
+
+.blogs >.box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.blogs >.box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.blogs >.box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+    color: var(--light-color);
+}
+
+
 /*media query*/
 @media (max-width: 991px) {
     html{
